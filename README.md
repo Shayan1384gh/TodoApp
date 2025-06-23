@@ -38,11 +38,11 @@
 
 
 
+---
 
 
 
-
-🚀 Getting Started To run the project locally: `bash git clone https://github.com/Shayan1384gh/TodoApp.git cd TodoApp npm install npm start 
+##🚀 Getting Started To run the project locally: `bash git clone https://github.com/Shayan1384gh/TodoApp.git cd TodoApp npm install npm start 
 
 
 
