@@ -23,7 +23,7 @@
 - ✅ Managed using Context API
 - ✅ Clean UI with basic styling
 
-
+<br>
 
 
 
@@ -36,11 +36,10 @@
 | 🧠 Context API | For global state management |
 | 🎨 CSS | For minimal styling (you can enhance it later) |
 
-<br>
+
 <br>
 
 ---
-<br>
 <br>
 
 
