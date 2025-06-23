@@ -23,6 +23,8 @@
 - ✅ Managed using Context API
 - ✅ Clean UI with basic styling
 
+- 
+
 
 
 ## 🛠 Tech Stack
@@ -34,9 +36,15 @@
 | 🧠 Context API | For global state management |
 | 🎨 CSS | For minimal styling (you can enhance it later) |
 
----
 
---- ## 🚀 Getting Started To run the project locally: `bash git clone https://github.com/Shayan1384gh/TodoApp.git cd TodoApp npm install npm start 
+
+
+
+
+
+🚀 Getting Started To run the project locally: `bash git clone https://github.com/Shayan1384gh/TodoApp.git cd TodoApp npm install npm start 
+
+
 
 
 🧑‍💻 Author
@@ -50,8 +58,4 @@ Made with ❤️ by Shayan (https://github.com/Shayan1384gh)
 
 
 
---- ## 🚀 Getting Started To run the project locally: `bash git clone https://github.com/Shayan1384gh/TodoApp.git cd TodoApp npm install npm start 
 
-
-🧑‍💻 Author
-Made with ❤️ by Shayan (https://github.com/Shayan1384gh)
