@@ -23,7 +23,7 @@
 - ✅ Managed using Context API
 - ✅ Clean UI with basic styling
 
-- 
+
 
 
 
