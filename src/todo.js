@@ -1,35 +1,54 @@
-import {useContext} from "react";
-import {taskcontext} from "./context";
+import { useContext } from "react";
+import { TaskContext } from "./context";
 
+const TodoApp = () => {
+  const [task, setTask] = useContext(TaskContext);
 
-const TodoApp = ()=>{
-    const [task , setTask] = useContext(taskcontext)
-    const RemoveHandler = (index)=>{
-        const updateTask = [...task]
-        updateTask.splice(index,1)
-        setTask(updateTask)
-    }
+  const RemoveHandler = (index) => {
+    const updatedTask = [...task];
+    updatedTask.splice(index, 1);
+    setTask(updatedTask);
+  };
 
-    const SetDoneHandler = (index)=>{
-        const updateTask = [...task]
-        updateTask[index].done = !updateTask[index].done
-        setTask(updateTask)
-    }
-    return (
-        <ul className={"list"}>
-        {task.map((task , index)=>(
-            <li className={`small-list ${task.done ? "done-list" : ""}`} key={index}>{task.text}
-                <div className={"icons"}>
-                    <span onClick={()=>SetDoneHandler(index)}>✅</span>
-                    <span onClick={()=>RemoveHandler(index)}>❌</span>
-                </div>
-            </li>
-            ))}
-        </ul>
-    )
+  const SetDoneHandler = (index) => {
+    const updatedTask = [...task];
+    updatedTask[index].done = !updatedTask[index].done;
+    setTask(updatedTask);
+  };
 
-}
+  return (
+    <ul className="space-y-4 max-w-md mx-auto mt-8">
+      {task.map((taskItem, index) => (
+        <li
+          key={index}
+          className={`flex justify-between items-center p-4 rounded-xl shadow-md transition duration-300 ${
+            taskItem.done
+              ? "bg-green-100 line-through text-gray-500"
+              : "bg-white hover:bg-blue-50"
+          }`}
+        >
+          <span className="text-lg font-medium">{taskItem.text}</span>
 
-export default TodoApp
+          <div className="flex items-center space-x-3 text-xl">
+            <button
+              onClick={() => SetDoneHandler(index)}
+              className="hover:scale-110 transition-transform duration-200 text-green-600"
+              title="انجام شد"
+            >
+              ✅
+            </button>
+            <button
+              onClick={() => RemoveHandler(index)}
+              className="hover:scale-110 transition-transform duration-200 text-red-500"
+              title="حذف"
+            >
+              ❌
+            </button>
+          </div>
+        </li>
+      ))}
+    </ul>
+  );
+};
 
-
+export default TodoApp;
